@@ -92,7 +92,7 @@ const New_form = () => {
 }
 
 const createCandidate = async (candidate) => {
-    const requisicao = await fetch('http://localhost:8081/register', {
+    const requisicao = await fetch('https://app-jobsnet.herokuapp.com/register', {
         method: "POST",
         headers: {
             'Accept': 'application/json',
