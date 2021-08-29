@@ -6,6 +6,7 @@ const routes = require('./routes');
 const app = express();
 const cors = require('cors');
 
+app.use(express.static(__dirname + '/front-end'));
 
 mongoose.connect('mongodb+srv://dbJobsNet:dbJobsNet@cluster0.b7ss1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
 });
