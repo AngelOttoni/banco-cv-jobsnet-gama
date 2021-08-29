@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://app-jobsnet.herokuapp.com/",
+      "url": "https://app-jobsnet.herokuapp.com",
       "description": "ambiente de desenvolvimento"
     }
   ],
