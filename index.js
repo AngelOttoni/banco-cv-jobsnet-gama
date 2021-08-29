@@ -14,6 +14,7 @@ app.use(cors());
 app.use(express.json());
 app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 app.use(routes);
-app.listen(process.env.PORT || 3000, () => {
-    console.log('App rodando na porta 3000');
+const PORT = process.env.PORT || 8081
+app.listen(PORT, () => {
+    console.log(`Servidor rodando na url http://localhost:8081`);
 });
