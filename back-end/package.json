@@ -1,0 +1,30 @@
+{
+  "name": "node-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.0",
+    "netlify": "^8.0.0",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelOttoni/form-jobsnet-gama.git"
+  },
+  "author": "Angelina de Meiras Ottoni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngelOttoni/form-jobsnet-gama/issues"
+  },
+  "homepage": "https://github.com/AngelOttoni/form-jobsnet-gama#readme"
+}

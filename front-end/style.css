@@ -1,0 +1,183 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+
+body {
+    /* margin: 5;
+    padding: 5;
+    box-sizing: border-box;
+    width: auto;
+    height: auto; */
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+header {
+    display: flex;
+    padding: 8px;
+    margin-bottom: 4px;
+}
+
+header #logo {
+    display: inline-flex;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-size: x-large;
+    color: #630A10;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    align-items: center;
+}
+
+nav li {
+    display: list-item;
+    padding: 8px;
+}
+
+li a {
+    text-decoration: none;
+}
+
+#titulo {
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 80px;
+    color: #630A10;
+}
+
+#subtitulo {
+    text-align: center;
+}
+
+form {
+    display: block;
+    align-items: center;
+    margin-top: 0em;
+}
+
+fieldset {
+    display: block;
+    margin-inline-start: 100px;
+    margin-inline-end: 100px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    /* border-width: 4px; */
+    border-radius: 10px;
+    /* border-style: groove; */
+    border-color: threedface;
+    border-image: initial;
+    color: #630A10;
+    background-color: #ffff;
+}
+
+fieldset #nome, #endereco, #email, #linkedin {
+    width: 70%;
+}
+
+fieldset #profissao, #cargo {
+    width: 60%;
+}
+
+/* fieldset .dadosP .endereco .contato .atuacao {
+    float:  left;
+    margin-right: 1em;
+    padding: 0.2em;
+    
+    
+} */
+
+h3 {
+    display: block;
+    font-size: 0.8em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 100px;
+    margin-inline-end: 100px;
+    font-weight: normal;
+}
+
+legend {
+    background-color: rgb(218, 214, 214);
+    color: #630A10;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+/*input {
+    margin: 5px;
+}*/
+
+button {
+    appearance: auto;
+    /* -webkit-writing-mode: horizontal-tb !important; */
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0em;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-size: medium;
+    font-weight: bolder;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-image: initial;
+    position: relative;
+    left: 45%;
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+    color: #cc5333;
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+    nav {
+        display: flex;
+        justify-content: initial;
+        align-items: center;
+    }
+    fieldset {
+        display: block;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    h3 {
+        display: block;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    button {
+        display: block;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+}

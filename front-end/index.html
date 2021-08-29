@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>JobsNET</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1>JobsNET</h1>
+        </div>
+        <nav class="navbar">
+            <li> <a href="index.html"> Início </a></li>
+            <li> <a href="quemsomos.html"> Quem somos </a></li>
+            <li> <a href="contato.html"> Contato </a></li>
+        </nav>
+    </header>
+
+    <div id="cabecalho">
+        <h2 id="titulo">Conectando você ao emprego dos seus sonhos!</h2>
+        <p id="subtitulo"><strong>Complete suas informações:</strong></p>
+    </div>
+
+    <form name="new_form" action="javascript:createCandidate()">
+        <fieldset class="dadosP">
+            <legend><strong>Seus dados pessoais</strong></legend><br>
+            <div class="dadosP">
+                <label for="nome"><strong>Nome completo:</strong>*</label>
+                <input type="text" name="nome" id="nome" required><br><br>
+            </div>
+            <div class="dadosP">
+                <label for="dataNasc"><strong>Data de Nascimento:</strong>*</label>
+                <input type="date" name="dataNasc" id="dataNasc" required><br><br>
+            </div>
+            <div class="dadosP">
+                <label for="genero"><strong>Gênero:</strong></label>
+                <select name="genero" id="genero">
+                    <option value="fem">Feminino</option>
+                    <option value="masc">Masculino</option>
+                    <option value="outro">Não Binário</option>
+                    <option value="prefiro">Prefiro não responder</option>
+                </select><br><br>
+            </div>
+            <div class="dadosP">
+                <label for="civil"><strong>Estado Civil:</strong></label>
+                <select id="civil" name="civil">
+                    <option value="sol">Solteiro(a)</option>
+                    <option value="cas">Casado(a)</option>
+                    <option value="outro">Outro</option>
+                </select><br><br>
+            </div>
+            <div class="dadosP">
+                <label for="rg">
+                    <span><strong>Identidade:</strong></span>
+                    <input type="number" name="rg" id="rg"><br><br>
+                </label>
+            </div>
+            <div class="dadosP">
+                <label for="cpf">
+                    <span><strong>CPF:</strong>*</span>
+                    <input type="number" name="cpf" id="cpf" required><br><br>
+                </label>
+            </div>
+        </fieldset><br>
+
+        <fieldset class="endereco">
+            <legend><strong>Seu endereço</strong></legend>
+            <p>
+                <label for="cep">CEP</label>*
+                <input id="cep" type="number" required /><br><br>
+                <label for="endereco">Endereço</label>
+                <input id="endereco" type="text" required /><br><br>
+                <label for="numero">Número</label>
+                <input id="numero" type="number" /><br><br>
+                <label for="complemento">Complemento</label>
+                <input id="complemento" type="text" /><br><br>
+                <label for="bairro">Bairro</label>
+                <input id="bairro" type="text" required /><br><br>
+                <label for="cidade">Cidade</label>
+                <input id="cidade" type="text" required /><br><br>
+                <label for="uf">Estado</label>
+                <input type="text" id="uf" required><br><br>
+            </p>
+        </fieldset><br>
+
+        <fieldset class="contato">
+            <legend><strong>Seus contatos</strong></legend><br>
+            <label for="celular">Número para contato</label>*
+            <input type="tel" name="celular" id="celular" required><br><br>
+            <label for="email">Email</label>*
+            <input type="email" name="email" id="email" required><br><br>
+            <label for="linkedin">LinkedIn</label>
+            <input type="linkedin" name="linkedin" id="linkedin"><br><br>
+        </fieldset><br>
+
+        <fieldset class="atuacao">
+            <legend><strong>Área de Atuação</strong></legend><br>
+            <label for="profissao">Profissão</label>*
+            <input type="text" name="profissao" id="profissao"><br><br>
+            <label for="cargo">Cargo pretendido</label>*
+            <input type="text" name="cargo" id="cargo"><br><br>
+        </fieldset>
+
+        <h3>Campos obrigatórios estão marcados com <strong>*</strong></h3>
+
+        <button type="submit" id="enviar" onclick="check_form()">Enviar!</button><br><br>
+
+    </form>
+
+</body>
+<footer>
+    <p>Desenvolvido por <a target="_blank" href="https://www.linkedin.com/in/angelina-meiras-ottoni/">Angelina Ottoni
+        </a>durante o treinamento Full Stack pela Gama Academy (Start Tech - Ambev)</p>
+</footer>
+<script type="text/javascript" src="myscript.js"></script>
+
+</html>

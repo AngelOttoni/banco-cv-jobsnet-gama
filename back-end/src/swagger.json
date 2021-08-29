@@ -1,0 +1,113 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "JobsNET API",
+    "description": "API Banco de Talentos da JobsNET. Empresa especialista em recrutamento e seleção de profissionais nas mais diversas áreas.",
+    "version": "0.0.1"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "description": "ambiente de desenvolvimento"
+    }
+  ],
+  "paths": {
+    "/register": {
+      "post": {
+        "summary": "Cadastro de candidato",
+        "description": "Cadastra candidatos para vagas de emprego no Banco de Talentos da JobsNet.",
+        "tags": [
+          "candidato"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  },
+                  "dataNasc": {
+                    "type": "string"
+                  },
+                  "genero": {
+                    "type": "string"
+                  },
+                  "civil": {
+                    "type": "string"
+                  },
+                  "rg": {
+                    "type": "string"
+                  },
+                  "cpf": {
+                    "type": "string"
+                  },
+                  "cep": {
+                    "type": "string"
+                  },
+                  "endereco": {
+                    "type": "string"
+                  },
+                  "numero": {
+                    "type": "string"
+                  },
+                  "complemento": {
+                    "type": "string"
+                  },
+                  "bairro": {
+                    "type": "string"
+                  },
+                  "cidade": {
+                    "type": "string"
+                  },
+                  "uf": {
+                    "type": "string"
+                  },
+                  "celular": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  },
+                  "linkedin": {
+                    "type": "string"
+                  },
+                  "profissao": {
+                    "type": "string"
+                  },
+                  "cargo": {
+                    "type": "string"
+                  }
+                }
+              },
+              "examples": {
+                "candidato 01": {
+                  "value": {
+                    "nome": "Rafaela Benedita Josefa Moreira",
+                    "dataNasc": "25/04/1990",
+                    "genero": "Feminino",
+                    "civil": "Casado(a)",
+                    "rg": "41.004.730-2",
+                    "cpf": "194.066.016-56",
+                    "cep": "69103-000",
+                    "endereco": "Rua Jorge Mubarac",
+                    "numero": "648",
+                    "complemento": "Casa",
+                    "bairro": "Santo Antônio",
+                    "cidade": "Itacoatiara",
+                    "uf": "AM",
+                    "celular": "(92) 98612-4185",
+                    "email": "rrafaelabeneditajosefamoreira@nokia.com",
+                    "linkedin": "xxxxxxxxxxx",
+                    "profissao": "Engenheira de Software",
+                    "cargo": "Desenvolvedora Full Stack"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
