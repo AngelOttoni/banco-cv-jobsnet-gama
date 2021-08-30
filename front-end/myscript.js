@@ -119,7 +119,7 @@ function check_form() {
     let cidade = document.getElementById('cidade').value;
     let uf = document.getElementById('uf').value;
     let celular = document.getElementById('celular').value;
-    let email = document.getElementById('email').value.mata;
+    let email = document.getElementById('email').value;
     let profissao = document.getElementById('profissao').value;    
     let cargo = document.getElementById('cargo').value;
 
